@@ -7,6 +7,32 @@ CUDA-capable NVIDIA GPU with drivers installed
 Python 3.7 or newer
 Repository cloned to your local machine
 
+## Model Checkpoints
+
+Download required model checkpoints:
+
+1. Create a `checkpoints` directory: `mkdir checkpoints`
+2. Download the DMAE model: `python download_checkpoints.py`
+```python
+# download_checkpoints.py
+from huggingface_hub import hf_hub_download
+import os
+
+os.makedirs("checkpoints", exist_ok=True)
+
+# Download DMAE model
+dmae_path = hf_hub_download(
+    repo_id="archinetai/dmae1d-ATC64-v1",
+    filename="pytorch_model.bin"
+)
+
+# Copy to checkpoints directory
+import shutil
+shutil.copy(dmae_path, "checkpoints/dmae.ckpt")
+print("✓ Model checkpoint downloaded to checkpoints/dmae.ckpt")
+```
+
+
 # Step 1: Activate the Environment
 ```python
 # Navigate to the repository directory
