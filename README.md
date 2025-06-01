@@ -1,4 +1,6 @@
-# Credits to the original repository, I just added: GPU support, Command-line argument support for key parameters, executable scripts, Presets for common generation scenarios (quick/standard/high-quality), + documentation for my personal use. Check out: `GPU_AUDIO_GUIDE.md`, `WORKING-GUIDE.md`, `WORKING.md`
+# Credits to the original repository, 
+## I just added: GPU support, Command-line argument support for key parameters, executable scripts, Presets for common generation scenarios (quick/standard/high-quality), + documentation for my personal use. 
+### Check out: `GPU_AUDIO_GUIDE.md`, `WORKING-GUIDE.md`, `WORKING.md`
 
 ## Original Readme:
 
